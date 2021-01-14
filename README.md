@@ -12,12 +12,15 @@ Take the  [script](https://github.com/nasirhafeez/routeros-emailbackup/blob/mast
 System -> Scripts [Add]  
 
 **Imprtant!** Script name has to be `BackupAndUpdate`   
-Put the script which you configured earlier into the source area.  
+Put the script which you configured earlier into the source area.
+
 ![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/script-name.png)  
 
-##### 3. Configure mail server
-Tools -> Email  
+##### 3. Configure E-mail server
+Tools -> Email
+
 Set your email server parameters.
+
 ![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/email-config.png)  
 
 To check email settings, send a test message by running the following command in terminal:
@@ -30,7 +33,8 @@ System -> Scheduler [Add]
 Name: `Backup And Update`  
 Start Time: `03:10:00`  
 Interval: `1d 00:00:00`  
-On Event: `/system script run BackupAndUpdate;`  
+On Event: `/system script run BackupAndUpdate;`
+
 ![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/scheduler-task.png)  
   
 Or you can use this command to create the task:

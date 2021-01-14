@@ -60,8 +60,3 @@ You will see the script working process in the log window. If the script finishe
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
----
-[__Buy me a coffee! :coffee:__](https://www.buymeacoffee.com/beeyev)
-
-![](https://visitor-badge.laobi.icu/badge?page_id=beeyev.Mikrotik-RouterOS-automatic-backup-and-update)

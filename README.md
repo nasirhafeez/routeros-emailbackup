@@ -28,7 +28,7 @@ To check email settings, send a test message by running the following command in
 /tool e-mail send to="yourMail@example.com" subject="backup & update test!" body="It works!";
 ```
 
-For Gmail/G-Suite, enable Less Secure Apps in [Settings](https://myaccount.google.com/lesssecureapps).
+*For Gmail/G-Suite, enable Less Secure Apps in [Settings](https://myaccount.google.com/lesssecureapps).*
 
 ##### 4. Create scheduled task
 System -> Scheduler [Add]  

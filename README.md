@@ -21,7 +21,7 @@ Tools -> Email
 
 Set your email server parameters.
 
-![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/email-config.png)  
+<img src="https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/email-config.png" alt="email config" width="350" height="200">
 
 To check email settings, send a test message by running the following command in terminal:
 ```

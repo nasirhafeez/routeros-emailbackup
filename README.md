@@ -14,7 +14,7 @@ System -> Scripts [Add]
 **Imprtant!** Script name has to be `BackupAndUpdate`   
 Put the script which you configured earlier into the source area.
 
-![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/script-name.png)  
+<img src="https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/email-config.png" alt="email config" width="350" height="700">
 
 ##### 3. Configure E-mail server
 Tools -> Email

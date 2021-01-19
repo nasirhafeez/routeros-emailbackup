@@ -69,10 +69,11 @@ if ([:len [/system identity get name]] = 0 or [/system identity get name] = "Mik
 
 :local deviceRbModel			[/system routerboard get model];
 :local deviceRbSerialNumber 	[/system routerboard get serial-number];
+:local deviceMac				[/interface ethernet get [/interface ethernet find default-name=ether1] mac-address ]
 :local deviceIdentityName 		[/system identity get name];
 :local deviceIdentityNameShort 	[:pick $deviceIdentityName 0 18];
 
-:local mailSubject   		"$SMP Device - $deviceIdentityNameShort:";
+:local mailSubject   		"$SMP - $deviceIdentityNameShort - $deviceMac:";
 :local mailBody 	 		"";
 
 :local mailBodyDeviceInfo	"\r\n\r\nDevice information: \r\nIdentity: $deviceIdentityName \r\nModel: $deviceRbModel \r\nSerial number: $deviceRbSerialNumber \r\n";

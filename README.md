@@ -38,8 +38,6 @@ Use this command to create the task:
 ```
 It will create a script that runs at a random time between `00:00:00` to `02:59:00` everyday.
 
-![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/scheduler-task.png)  
-
 ##### 5. Test the script
 When everything is done, you need to test and make sure that the script is working correctly.  
 To do so, open a New Terminal and Log window in your WinBox, then run the script manually by executing this command `/system script run BackupAndUpdate;` in Terminal.  

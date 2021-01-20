@@ -31,18 +31,15 @@ To check email settings, send a test message by running the following command in
 *For Gmail/G-Suite, enable Less Secure Apps in [Settings](https://myaccount.google.com/lesssecureapps).*
 
 ##### 4. Create scheduled task
-System -> Scheduler [Add]  
-Name: `Backup And Update`  
-Start Time: `03:10:00`  
-Interval: `1d 00:00:00`  
-On Event: `/system script run BackupAndUpdate;`
+  
+Use this command to create the task:
+```
+:local hour [:pick [/system clock get time] 0]; :local min [:pick [/system clock get time] 3 5]; :local stime "0$hour:$min:00"; /system scheduler add name="Backup Email" on-event="/system script run BackupAndUpdate;" start-time=$stime interval=1d comment="" disabled=no
+```
+It will create a script that runs at a random time between `00:00:00` to `02:59:00` everyday.
 
 ![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/scheduler-task.png)  
-  
-Or you can use this command to create the task:
-```
-/system scheduler add name="Firmware Updater" on-event="/system script run BackupAndUpdate;" start-time=03:10:00 interval=1d comment="" disabled=no
-```
+
 ##### 5. Test the script
 When everything is done, you need to test and make sure that the script is working correctly.  
 To do so, open a New Terminal and Log window in your WinBox, then run the script manually by executing this command `/system script run BackupAndUpdate;` in Terminal.  

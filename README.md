@@ -36,9 +36,7 @@ Use this command to create the task:
 ```
 :local hour [:pick [/system clock get time] 0]; :local min [:pick [/system clock get time] 3 5]; :local stime "0$hour:$min:00"; /system scheduler add name="Backup Email" on-event="/system script run BackupAndUpdate;" start-time=$stime interval=1d comment="" disabled=no
 ```
-It will create a script that runs at a random time between `00:00:00` to `02:59:00` everyday.
-
-![](https://github.com/nasirhafeez/routeros-emailbackup/blob/master/howto/scheduler-task.png)  
+It will create a script that runs at a random time between `00:00:00` to `02:59:00` everyday. This means that the load of emails will be distributed and the receiving system will not be overwhelmed with hundreds of emails at the same time.
 
 ##### 5. Test the script
 When everything is done, you need to test and make sure that the script is working correctly.  
